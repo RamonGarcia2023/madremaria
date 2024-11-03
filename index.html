@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<!-- Este tag especifica la codificación de caracteres para la página -->
+<meta charset="UTF-8">
+
+<!-- Meta Viewport (para diseño responsivo). Ayuda a que la página se adapte correctamente a diferentes tamaños de pantalla -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Proporciona una breve descripción de la página para los motores de búsqueda y redes sociales -->
+<meta name="description" content="Explora Mama Maria, donde descubrirás inspiradoras historias sobre santos, santas y la Virgen María. Sumérgete en la fe, conoce milagros asombrosos y descubre cómo la presencia de la Virgen ha impactado positivamente en vidas, incluida la historia personal de un milagro que transformó mi vida. ¡Bienvenido a un rincón celestial de reflexión y devoción en Mama Maria!">
+
+<!-- Especifica el autor de la página -->
+<meta name="author" content="Mamá María">
+
+<!-- Lista de palabras clave asociadas a tu página -->
+<meta name="keywords" content="santos, santas, Virgen María, milagros, fe cristiana, espiritualidad, devoción, testimonios, historias sagradas, reflexiones religiosas, vida espiritual, Mama Maria">
+
+<!-- Meta Robots (para controlar la indexación de motores de búsqueda). Indica a los motores de búsqueda si deben indexar y seguir los enlaces de la página -->
+<meta name="robots" content="index, follow">
+
+<!-- Meta Open Graph (para compartir en redes sociales, especialmente en Facebook). Proporciona información específica para compartir en redes sociales -->
+<meta property="og:title" content="Mamá María">
+<meta property="og:description" content="Explora Mama Maria, donde descubrirás inspiradoras historias sobre santos, santas y la Virgen María. Sumérgete en la fe, conoce milagros asombrosos y descubre cómo la presencia de la Virgen ha impactado positivamente en vidas, incluida la historia personal de un milagro que transformó mi vida. ¡Bienvenido a un rincón celestial de reflexión y devoción en Mama Maria!">
+<!-- <meta property="og:image" content="URL de la imagen">
+<meta property="og:url" content="URL de tu página"> -->
+
+    <title>Mama Maria</title>
+
+    <link rel="stylesheet" type="text/css" href="C:/Users/rgarcia/Desktop/Sistemas/Pagina web mamamaria/mamamaria/styles.css">
+
+    <!--  <h1>MAMA MARIA</h1>  -->
+
+</head>
+
+<body>
+   
+ <!-- <nav>
+    <a href="#">Nosotros</a>
+    <a href="#">Santos</a>
+    <a href="#">Santas</a>
+    <a href="#">Advocaciones</a>
+  </nav>  -->  
+  
+<div>
+  <!-- PRIMERA FILA DE 5 -->
+    <div class="img_index"><a href="C:/Users/rgarcia/Desktop/Sistemas/Pagina web mamamaria/mamamaria/advocaciones.html"><img src="C:/Users/rgarcia/Desktop/Sistemas/Pagina web mamamaria/mamamaria/Imagenes/index_advocacion.jpg" alt="Advocaciones"></a></div>
+    
+    <div class="img_index"><a href="C:/Users/rgarcia/Desktop/Sistemas/Pagina web mamamaria/mamamaria/santas.html"><img src="C:/Users/rgarcia/Desktop/Sistemas/Pagina web mamamaria/mamamaria/Imagenes/index_santas.jpg" alt="Santas"></a></div>
+
+    <div class="img_index"><a href="C:/Users/rgarcia/Desktop/Sistemas/Pagina web mamamaria/mamamaria/santos.html"><img src="C:/Users/rgarcia/Desktop/Sistemas/Pagina web mamamaria/mamamaria/Imagenes/index_santos.jpg" alt="Santos"></a></div>
+   
+   <div>
+      <h2>Bienvenido...</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero vitae nisi fringilla, nec tempus lectus varius.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero vitae nisi fringilla, nec tempus lectus varius.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero vitae nisi fringilla, nec tempus lectus varius.</p>
+   </div>
+</div>
+
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+   <!-- <footer>
+        &copy; 2023 Tu Página Web - Todos los derechos reservados.
+    </footer>  -->
+
+</body>
+
+</html>
